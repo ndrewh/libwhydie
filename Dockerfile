@@ -1,6 +1,6 @@
 FROM ubuntu:22.04
 
-RUN apt install build-essential clang libunwind-dev
+RUN apt update && apt install -y build-essential clang libunwind-dev
 COPY . /work
 WORKDIR /work
 RUN make
