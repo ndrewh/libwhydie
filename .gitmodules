@@ -1,0 +1,3 @@
+[submodule "libprocmaps"]
+	path = libprocmaps
+	url = git@github.com:Harmos274/libprocmaps.git
