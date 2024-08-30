@@ -14,7 +14,7 @@ static int get_backtrace (char *buf, int size);
 static void handler(int signo) {
     char buf[0x1000];
     get_backtrace(buf, 0x1000);
-    fprintf(stderr, "%s", buf);
+    fprintf(stderr, "why die:\n%s", buf);
     signal(signo, SIG_DFL);
 }
 
