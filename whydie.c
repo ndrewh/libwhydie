@@ -44,7 +44,7 @@ static int get_backtrace (char *buf, int size) {
   unw_getcontext(&context);
   unw_init_local(&cursor, &context);
 
-  procmaps_row_t **maps = contruct_procmaps(getpid());
+  procmaps_row_t **maps = contruct_procmaps(0); // self
 
   char *bufcur = buf;
   uintptr_t ip, sp;
